@@ -1,0 +1,139 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-gray: #f0f2f5;
+    --color-gray2: #dddfe2;
+    --color-dark: #1d2129;
+    --color-blue: #1b74e4;
+    --color-blue2: #166fe5;
+    --color-green: #42b72a;
+    --color-green2: #36a420;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70vw;
+}
+
+.content-info {
+    width: 37.5rem;
+}
+
+.content-login {
+    width: 21.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content-login-box {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%) ;
+    border-radius: 0.5rem;
+}
+
+.inputs {
+    padding: 15px;
+    height: 22px;
+    border-radius: 6px;
+    border: 1px solid var(--color-gray2);
+    outline: none;
+    width: 90%;
+    font-size: 1.063rem;
+    color: var(--color-dark);
+}
+
+.inputs:focus {
+    border-color: var(--color-blue);
+    box-shadow: 0 0 0 2px var(--color-gray2);
+}
+
+.btn {
+    padding: 15px;
+    border: none;
+    color: var(--color-white);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+a {
+    color: var(--color-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--color-gray);
+}
+
+p, .p {
+    text-align: center;
+    color: var(--color-dark);
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 0;
+}
+
+p:focus {
+    text-decoration: underline;
+}
+
+.btn-entrar {
+    background-color: var(--color-blue);
+}
+
+.btn-entrar:hover {
+    background-color: var(--color-blue2);
+}
+
+.btn-create-account {
+    background-color: var(--color-green);
+    width: auto;
+}
+
+.btn-create-accont:hover {
+    background-color: var(--color-green2) ;
+}
+
+img {
+    border: none;
+    height: 106px;
+    margin: -28px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+    margin-bottom: 10rem;
+    padding: 0 0 20px;
+}
