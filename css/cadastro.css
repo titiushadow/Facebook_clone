@@ -233,10 +233,6 @@ hr {
     justify-content: center;
 }
 
-.meta {
-    width: 50%;
-}
-
 @media(max-width: 463px) {
     .geral{
         width: auto;
@@ -255,7 +251,5 @@ hr {
     .content-login-box {
         box-shadow: none;
         width: 100%;
-    }
-    
+    } 
 }
-
