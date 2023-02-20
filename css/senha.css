@@ -14,7 +14,6 @@ body {
     background-color: var(--color-gray);
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 90vh;
     margin: 0;
     padding: 0;
@@ -55,7 +54,7 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    width: 100%;
+    width: 130%;
     box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%) ;
     border-radius: 0.5rem;
 }
@@ -76,6 +75,17 @@ body {
     box-shadow: 0 0 0 2px var(--color-gray2);
 }
 
+.buttons {
+    display: flex;
+    width: 20rem;
+    gap: 1rem;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
 .btn {
     padding: 15px;
     border: none;
@@ -87,73 +97,29 @@ body {
     cursor: pointer;
 }
 
-a {
-    color: var(--color-blue);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.pag {
-    text-decoration: underline;
-    color: #000000;
-}
-
 hr {
     width: 100%;
     border: 1px solid var(--color-gray);
 }
 
-p, .p {
-    text-align: center;
-    color: var(--color-dark);
-    font-size: 14px;
-    font-weight: normal;
-    padding-top: 0;
-}
-
-p:focus {
-    text-decoration: underline;
-}
-
-.btn-entrar {
+.btn-pesquisar {
     background-color: var(--color-blue);
+    text-align: center;
+    text-decoration: none;
 }
 
-.btn-entrar:hover {
+.btn-pesquisar:hover {
     background-color: var(--color-blue2);
 }
 
-.btn-create-account {
-    background-color: var(--color-green);
-    width: auto;
+.btn-cancelar {
+    background-color: var(--color-gray2);
+    color: var(--color-dark);
+    text-align: center;
+    text-decoration: none;
 }
 
-.btn-create-accont:hover {
-    background-color: var(--color-green2) ;
-}
-
-img {
-    border: none;
-    height: 106px;
-    margin: -28px;
-}
-
-h2 {
-    font-size: 28px;
-    font-weight: normal;
-    line-height: 32px;
-    width: 500px;
-    margin-bottom: 10rem;
-    padding: 0 0 20px;
-}
-
-.img-footer {
-    width: 50%;
-    height: 35px;
-    margin-top: 2px;
-}
-
-@media(max-width: 1400px) {
+@media(max-width: 1350px) {
     .geral{
         width: auto;
         display: flex;
@@ -161,24 +127,8 @@ h2 {
         align-items: center;
         justify-content: center;
     }
-    h2 {
-        position: absolute;
-        top: 0px;
-        left: -5000px;
-    }
-    img {
-        align-items: center;
-        justify-content: center;
-        width: 110%;
-    }
 
-    .content-login {
-        margin-top: 1rem;
-    }
-
-    .img-footer {
-        width: 50%;
-        height: 30px;
-        margin-top: 2rem;
+    .content-login-box {
+        width: 100%;
     }
 }

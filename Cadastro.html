@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se no facebook | Facebook</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="shortcut icon" href="/img/facebook_icon.png">
+</head>
+<body>
+    <div class="geral">
+        <div class="content-login">
+            <form class="content-login-box">
+                <div class="title">
+                    <h3 class="text1">Criar uma nova conta</h3>
+                    <p class="description">É facil e rapido</p>
+                    <hr class="divider">
+                </div>
+                <div class="input-name-sobrenome">
+                    <input id="name" type="text" class="inputs" required placeholder="Nome">
+                    <input type="text" class="inputs" required placeholder="Sobrenome">
+                </div>
+                    <input type="text" class="input-phone" required placeholder="Celular ou email">
+                    <input type="text" class="input-password" required placeholder="Nova senha">
+
+                    <div>
+                        <p class="date-birth">Data de Nascimento</p>
+                        <div class="dates">
+                            <select class="date" name="dia" id="dia"></select>
+                            <select class="date" name="mes" id="mes"></select>
+                            <select class="date" name="ano" id="ano"></select>
+                        </div>
+                    </div>
+
+                    <div class="all-genero">
+                        <p class="genero">Gênero</p>
+                        <div class="genero3">
+                            <div class="gender">
+                                <label for="opcao1">Masculino</label>
+                                <input type="radio" id="masculino" name="opcoes" value="masculino">
+                            </div>
+                            <div class="gender">
+                                <label for="opcao2">Feminino</label>
+                                <input type="radio" id="feminino" name="opcoes" value="faminino">
+                            </div>
+                            <div class="gender">
+                                <label for="opcao3">Personalizado</label>
+                                <input type="radio" id="personalizado" name="opcoes" value="personalizado">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-footer">As pessoas que usam nosso serviço podem ter enviado suas informações de contato para o Facebook. <a class="link-footer" href="#">Saiba mais</a> </p>
+                    <p class="text-footer">Ao clicar em Cadastre-se, você concorda com nossos <a class="link-footer" href="#">Termos, Política de Privacidade e Política de Cookies.</a> Você poderá receber notificações por SMS e cancelar isso quando quiser.</p>
+
+                    <div class="entrar">
+                        <button id="toast" class="btn btn-entrar">Cadastre-se</button>
+                    </div>
+                    <a class="forgot" href="index.html">Já tem uma conta?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import js -->
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+:root {
+    --color-white: #FFFFFF;
+    --color-gray: #f0f2f5;
+    --color-gray2: #dddfe2;
+    --color-dark: #1d2129;
+    --color-blue: #1b74e4;
+    --color-blue2: #166fe5;
+    --color-green: #42b72a;
+    --color-green2: #36a420;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+}
+
+.geral {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70vw;
+}
+
+.content-login {
+    width: 21.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.content-login-box {
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 110%;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    border-radius: 0.5rem;
+}
+
+.text1 {
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+.description {
+    text-align: center;
+    margin: 0;
+    color: #606770;
+    margin: 0.5rem;
+}
+
+.divider {
+    width: auto;
+    border-bottom: 1px solid #dddfe2;
+    text-align: center;
+    margin: 0;
+}
+
+.input-name-sobrenome {
+    display: flex;
+    gap: 1rem;
+}
+
+.inputs {
+    display: flex;
+    padding: 15px;
+    height: 18px;
+    border-radius: 6px;
+    border: 1px solid var(--color-gray2);
+    outline: none;
+    width: 90%;
+    font-size: 1.063rem;
+    color: var(--color-dark);
+}
+
+.inputs:focus {
+    border-color: var(--color-blue);
+    box-shadow: 0 0 0 2px var(--color-gray2);
+}
+
+.input-phone {
+    display: flex;
+    padding: 15px;
+    height: 18px;
+    border-radius: 6px;
+    border: 1px solid var(--color-gray2);
+    outline: none;
+    width: auto;
+    font-size: 1.063rem;
+    color: var(--color-dark);
+}
+
+.input-phone:focus {
+    border-color: var(--color-blue);
+    box-shadow: 0 0 0 2px var(--color-gray2);
+}
+
+.input-password {
+    display: flex;
+    padding: 15px;
+    height: 18px;
+    border-radius: 6px;
+    border: 1px solid var(--color-gray2);
+    outline: none;
+    width: auto;
+    font-size: 1.063rem;
+    color: var(--color-dark);
+}
+
+.input-password:focus {
+    border-color: var(--color-blue);
+    box-shadow: 0 0 0 2px var(--color-gray2);
+}
+
+.date-birth {
+    color: #606770;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.dates {
+    display: flex;
+    gap: 1rem;
+}
+
+.date {
+    width: 10rem;
+    height: 36px;
+    border-radius: 5px;
+    border: 1px solid var(--color-gray2);
+}
+
+.genero3 {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.genero {
+    color: #606770;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.gender {
+    display: flex;
+    border: solid;
+    border-radius: 5px;
+    border: 1px solid var(--color-gray2);
+    width: 10rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    height: 36px;
+    padding-left: 1px;
+}
+
+.text-footer {
+    color: #777;
+    margin: 0;
+    font-size: 11px;
+}
+
+.link-footer {
+    text-decoration: none;
+}
+
+.link-footer:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 15px;
+    border: none;
+    color: var(--color-white);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+a {
+    color: var(--color-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--color-gray);
+}
+
+.btn-entrar {
+    background-color: var(--color-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 36px;
+}
+
+.btn-entrar:hover {
+    background-color: var(--color-green2);
+}
+
+.entrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgot {
+    display: flex;
+    justify-content: center;
+}
+
+.meta {
+    width: 50%;
+}
+
+@media(max-width: 463px) {
+    .geral{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .content-login {
+        margin-top: 1rem; 
+    }
+    body {
+        background-color: var(--color-white);
+    }
+    .content-login-box {
+        box-shadow: none;
+        width: 100%;
+    }
+    
+}
+
